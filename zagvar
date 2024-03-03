@@ -1,0 +1,10 @@
+n = TextWindow.ReadNumber()
+min = 9
+While n>0
+    a= Math.Remainder(n, 10)
+    n=Math.Floor(n/10)
+    If min>a Then
+        min = a
+    EndIf
+EndWhile
+TextWindow.WriteLine(min)
